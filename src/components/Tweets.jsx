@@ -1,11 +1,12 @@
-import { ApiContext } from '../App';
+import { ApiContext, ThemeContext } from '../App';
 import CreateTweet from './CreateTweet'
 import Tweet from './Tweet'
 import { useContext } from "react";
 
 export default function Tweets() {
 
-        const {tweets, theme} = useContext(ApiContext);
+        const {tweets} = useContext(ApiContext);
+        const {theme} = useContext(ThemeContext);
 
   return (
 
